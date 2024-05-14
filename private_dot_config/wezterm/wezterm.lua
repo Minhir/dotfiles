@@ -7,7 +7,7 @@ config.color_scheme = 'Dracula+'
 
 config.window_decorations = 'RESIZE'
 
-config.font = wezterm.font_with_fallback 'Iosevka'
+config.font = wezterm.font_with_fallback { 'Iosevka' }
 config.font_size = 14
 
 config.keys = {
