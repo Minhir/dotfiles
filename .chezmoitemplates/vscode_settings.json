@@ -11,10 +11,7 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "terminal.integrated.scrollback": 10000,
-  "todo-tree.general.tags": [
-    "FIXME",
-    "TODO"
-  ],
+  "todo-tree.general.tags": ["FIXME", "TODO"],
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 1,
