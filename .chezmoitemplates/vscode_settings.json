@@ -3,6 +3,7 @@
     "indent_size": "2",
     "indent_style": "space"
   },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.renderWhitespace": "trailing",
   "editor.unicodeHighlight.allowedLocales": {
