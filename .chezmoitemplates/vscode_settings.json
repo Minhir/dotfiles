@@ -3,6 +3,8 @@
     "indent_size": "2",
     "indent_style": "space"
   },
+  "git.blame.editorDecoration.enabled": true,
+  "git.blame.editorDecoration.template": "${authorName}, ${authorDateAgo} - ${subject}",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.renderWhitespace": "trailing",
