@@ -1,24 +1,31 @@
 {
-  "Lua.format.defaultConfig": {
-    "indent_size": "2",
-    "indent_style": "space"
-  },
-  "git.blame.editorDecoration.enabled": true,
-  "git.blame.editorDecoration.template": "${authorName}, ${authorDateAgo} - ${subject}",
+  "$schema": "vscode://schemas/settings/user",
+  "cSpell.language": "en,ru",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.renderWhitespace": "trailing",
   "editor.unicodeHighlight.allowedLocales": {
     "ru": true
   },
-  "github.copilot.editor.enableAutoCompletions": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.blame.editorDecoration.enabled": true,
+  "git.blame.editorDecoration.template": "${authorName}, ${authorDateAgo} - ${subject}",
+  "json.schemaDownload.trustedDomains": {
+    "https://biomejs.dev": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://json-schema.org/": true,
+    "https://www.schemastore.org/": true
+  },
+  "Lua.format.defaultConfig": {
+    "indent_size": "2",
+    "indent_style": "space"
+  },
   "terminal.integrated.scrollback": 10000,
-  "todo-tree.general.tags": ["FIXME", "TODO"],
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "editorWhitespace.foreground": "#F00"
-  }
+  },
+  "workbench.colorTheme": "Dark Modern",
+  "diffEditor.renderSideBySide": true,
+  "git.suggestSmartCommit": false
 }

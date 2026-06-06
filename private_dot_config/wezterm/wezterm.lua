@@ -10,6 +10,10 @@ config.window_decorations = 'RESIZE'
 config.font = wezterm.font_with_fallback { 'Iosevka' }
 config.font_size = 14
 
+config.default_prog = {
+    "sh", "-lc", "exec nu"
+}
+
 config.keys = {
     { key = 'UpArrow',    mods = 'SHIFT', action = act.SplitPane { direction = 'Up' } },
     { key = 'RightArrow', mods = 'SHIFT', action = act.SplitPane { direction = 'Right' } },
