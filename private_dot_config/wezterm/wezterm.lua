@@ -2,6 +2,9 @@ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 local act = wezterm.action
+local shell = os.getenv 'SHELL' or '/bin/sh'
+
+config.default_prog = { shell, '-lc', 'exec nu' }
 
 config.color_scheme = 'Dracula+'
 
@@ -10,17 +13,11 @@ config.window_decorations = 'RESIZE'
 config.font = wezterm.font_with_fallback { 'Iosevka' }
 config.font_size = 14
 
-config.default_prog = {
-    "sh", "-lc", "exec nu"
-}
-
 config.keys = {
     { key = 'UpArrow',    mods = 'SHIFT', action = act.SplitPane { direction = 'Up' } },
     { key = 'RightArrow', mods = 'SHIFT', action = act.SplitPane { direction = 'Right' } },
     { key = 'DownArrow',  mods = 'SHIFT', action = act.SplitPane { direction = 'Down' } },
     { key = 'LeftArrow',  mods = 'SHIFT', action = act.SplitPane { direction = 'Left' } },
-    { key = 'LeftArrow',  mods = 'OPT',   action = act.SendKey { key = 'b', mods = 'ALT' } },
-    { key = 'RightArrow', mods = 'OPT',   action = act.SendKey { key = 'f', mods = 'ALT' } },
     { key = 'LeftArrow',  mods = 'OPT',   action = act.SendKey { key = 'b', mods = 'ALT' } },
     { key = 'RightArrow', mods = 'OPT',   action = act.SendKey { key = 'f', mods = 'ALT' } },
     { key = '8',          mods = 'CTRL',  action = act.RotatePanes 'Clockwise' },
