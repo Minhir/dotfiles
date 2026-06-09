@@ -23,6 +23,9 @@ config.keys = {
     { key = 'RightArrow', mods = 'OPT',   action = act.SendKey { key = 'f', mods = 'ALT' } },
     { key = 'LeftArrow',  mods = 'OPT',   action = act.SendKey { key = 'b', mods = 'ALT' } },
     { key = 'RightArrow', mods = 'OPT',   action = act.SendKey { key = 'f', mods = 'ALT' } },
+    { key = '8',          mods = 'CTRL',  action = act.RotatePanes 'Clockwise' },
+    { key = '9',          mods = 'CTRL',  action = act.RotatePanes 'CounterClockwise' },
+    { key = '0',          mods = 'CTRL',  action = act.PaneSelect { mode = 'SwapWithActive' } },
     {
         key = 'R',
         mods = 'CTRL|SHIFT',

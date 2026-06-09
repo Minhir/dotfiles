@@ -1,6 +1,7 @@
 {
   "$schema": "vscode://schemas/settings/user",
   "cSpell.language": "en,ru",
+  "diffEditor.renderSideBySide": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.renderWhitespace": "trailing",
@@ -9,6 +10,7 @@
   },
   "git.blame.editorDecoration.enabled": true,
   "git.blame.editorDecoration.template": "${authorName}, ${authorDateAgo} - ${subject}",
+  "git.suggestSmartCommit": false,
   "json.schemaDownload.trustedDomains": {
     "https://biomejs.dev": true,
     "https://developer.microsoft.com/json-schemas/": true,
@@ -25,7 +27,5 @@
   "workbench.colorCustomizations": {
     "editorWhitespace.foreground": "#F00"
   },
-  "workbench.colorTheme": "Dark Modern",
-  "diffEditor.renderSideBySide": true,
-  "git.suggestSmartCommit": false
+  "workbench.colorTheme": "Dark Modern"
 }
