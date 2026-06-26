@@ -17,7 +17,7 @@ truncation_length = 7
 truncation_symbol = '../'
 
 [line_break]
-disabled = true
+disabled = false
 
 [typst]
 symbol = "t "
