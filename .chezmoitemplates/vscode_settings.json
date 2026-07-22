@@ -15,12 +15,16 @@
     "https://biomejs.dev": true,
     "https://developer.microsoft.com/json-schemas/": true,
     "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://opencode.ai": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
     "https://www.schemastore.org/": true
   },
   "Lua.format.defaultConfig": {
     "indent_size": "2",
     "indent_style": "space"
   },
+  "scm.defaultViewMode": "tree",
   "terminal.integrated.scrollback": 10000,
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 1,
