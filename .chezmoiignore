@@ -3,4 +3,5 @@ Library
 {{ end }}
 {{ if ne .chezmoi.os "linux" }}
 .config/Code
+.config/nushell
 {{ end }}
