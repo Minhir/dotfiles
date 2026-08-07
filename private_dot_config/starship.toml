@@ -140,7 +140,7 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol$state( \($name\))]($style)\]'
 
 [nodejs]
-disabled = true
+disabled = false
 format = '\[[$symbol($version)]($style)\]'
 symbol = "[⬢](bold green) "
 
@@ -157,6 +157,7 @@ format = '\[[$symbol$cloud(\($project\))]($style)\]'
 format = '\[[$symbol]($style)\]'
 
 [package]
+disabled = true
 format = '\[[$symbol$version]($style)\]'
 
 [perl]
