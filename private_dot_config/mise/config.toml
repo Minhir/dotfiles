@@ -1,0 +1,7 @@
+[tools]
+atuin = "latest"
+carapace = "latest"
+just = "latest"
+node = "lts"
+rust = "latest"
+starship = "latest"
