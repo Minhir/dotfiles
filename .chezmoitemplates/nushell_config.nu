@@ -34,8 +34,8 @@ def init-if-stale [cmd: string, init: closure] {
   $generated | save -f $out
 }
 
-init-if-stale atuin { atuin init nu --disable-up-arrow }
 init-if-stale mise { mise activate nu }
+init-if-stale atuin { atuin init nu --disable-up-arrow }
 init-if-stale starship { starship init nu }
 
 $env.CARAPACE_BRIDGES = 'zsh'
