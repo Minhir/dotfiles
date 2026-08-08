@@ -25,6 +25,20 @@
     "indent_style": "space"
   },
   "scm.defaultViewMode": "tree",
+  "terminal.integrated.defaultProfile.linux": "Nushell",
+  "terminal.integrated.profiles.linux": {
+    "Nushell": {
+      "path": "${env:SHELL}",
+      "args": ["-i", "-c", "exec nu"]
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "Nushell",
+  "terminal.integrated.profiles.osx": {
+    "Nushell": {
+      "path": "${env:SHELL}",
+      "args": ["-i", "-c", "exec nu"]
+    }
+  },
   "terminal.integrated.scrollback": 10000,
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 1,
