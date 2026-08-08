@@ -2,9 +2,8 @@ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 local act = wezterm.action
-local shell = os.getenv 'SHELL' or 'sh'
 
-config.default_prog = { shell, '-i', '-c', 'exec nu' }
+config.default_prog = { 'nu' }
 
 config.color_scheme = 'Dracula+'
 

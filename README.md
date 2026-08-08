@@ -5,6 +5,8 @@
 - `git`
 - `chezmoi`
 - `mise`
+- `nushell`
+- `wezterm`
 
 ## Setup
 

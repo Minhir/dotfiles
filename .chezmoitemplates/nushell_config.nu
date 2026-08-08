@@ -35,8 +35,5 @@ def init-if-stale [cmd: string, init: closure] {
 }
 
 init-if-stale mise { mise activate nu }
-init-if-stale atuin { atuin init nu --disable-up-arrow }
-init-if-stale starship { starship init nu }
 
 $env.CARAPACE_BRIDGES = 'zsh'
-init-if-stale carapace { carapace _carapace nushell }

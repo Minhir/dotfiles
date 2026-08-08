@@ -1,10 +1,10 @@
 [tools]
-atuin = "latest"
-carapace = "latest"
+atuin = { version = "latest", postinstall = "nu ~/.config/mise/generate-nushell-init.nu" }
+carapace = { version = "latest", postinstall = "nu ~/.config/mise/generate-nushell-init.nu" }
 just = "latest"
 node = "lts"
 rust = "latest"
-starship = "latest"
+starship = { version = "latest", postinstall = "nu ~/.config/mise/generate-nushell-init.nu" }
 
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
