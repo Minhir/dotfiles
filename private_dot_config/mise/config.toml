@@ -2,9 +2,19 @@
 atuin = { version = "latest", postinstall = "nu ~/.config/mise/generate-nushell-init.nu" }
 carapace = { version = "latest", postinstall = "nu ~/.config/mise/generate-nushell-init.nu" }
 just = "latest"
+killport = "latest"
+lazygit = "latest"
 node = "lts"
+rclone = "latest"
 rust = "latest"
 starship = { version = "latest", postinstall = "nu ~/.config/mise/generate-nushell-init.nu" }
+tealdeer = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
+minimum_release_age = "3d"
+
+[bootstrap.macos.dock]
+autohide = false
+orientation = "left"
+show_recents = false

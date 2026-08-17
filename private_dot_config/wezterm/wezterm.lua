@@ -3,6 +3,12 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 local act = wezterm.action
 
+if wezterm.target_triple:find('apple-darwin', 1, true) then
+    config.set_environment_variables = {
+        PATH = '/opt/homebrew/bin:' .. (os.getenv('PATH') or '/usr/bin:/bin:/usr/sbin:/sbin'),
+    }
+end
+
 config.default_prog = { 'nu' }
 
 config.color_scheme = 'Dracula+'
