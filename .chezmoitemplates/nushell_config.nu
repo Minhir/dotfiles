@@ -1,5 +1,6 @@
 $env.config.buffer_editor = "code"
 $env.config.show_banner = false
+$env.EDITOR = "code --wait --new-window"
 
 const autoload_dir = $nu.data-dir | path join "vendor" "autoload"
 let nu_modified = (ls $nu.current-exe | get modified.0)

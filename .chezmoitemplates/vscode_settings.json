@@ -16,6 +16,7 @@
     "https://developer.microsoft.com/json-schemas/": true,
     "https://json-schema.org/": true,
     "https://json.schemastore.org/": true,
+    "https://models.dev": true,
     "https://opencode.ai": true,
     "https://raw.githubusercontent.com/microsoft/vscode/": true,
     "https://www.schemastore.org/": true
@@ -28,15 +29,13 @@
   "terminal.integrated.defaultProfile.linux": "Nushell",
   "terminal.integrated.profiles.linux": {
     "Nushell": {
-      "path": "${env:SHELL}",
-      "args": ["-i", "-c", "exec nu"]
+      "path": "nu"
     }
   },
   "terminal.integrated.defaultProfile.osx": "Nushell",
   "terminal.integrated.profiles.osx": {
     "Nushell": {
-      "path": "${env:SHELL}",
-      "args": ["-i", "-c", "exec nu"]
+      "path": "/opt/homebrew/bin/nu"
     }
   },
   "terminal.integrated.scrollback": 10000,
