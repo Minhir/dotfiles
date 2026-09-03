@@ -4,18 +4,24 @@ def main [] {
     error make { msg: "MISE_TOOL_NAME is not set; this script must run from a mise tool postinstall hook" }
   }
 
+  let command = if $tool == "worktrunk" { "wt" } else { $tool }
   let args = match $tool {
     "atuin" => ["init" "nu" "--disable-up-arrow"]
     "carapace" => ["_carapace" "nushell"]
     "starship" => ["init" "nu"]
+    "worktrunk" => ["config" "shell" "install" "nu" "--yes"]
     _ => { error make { msg: $"unsupported Nushell integration: ($tool)" } }
   }
 
-  let result = (run-external $tool ...$args | complete)
+  let result = (run-external $command ...$args | complete)
   if $result.exit_code != 0 {
     error make {
       msg: $"failed to generate Nushell integration for ($tool): exit code ($result.exit_code); ($result.stderr | str trim)"
     }
+  }
+
+  if $tool == "worktrunk" {
+    return
   }
 
   let autoload_dir = ($nu.data-dir | path join "vendor" "autoload")

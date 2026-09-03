@@ -1,15 +1,16 @@
 [tools]
 atuin = { version = "latest", postinstall = "nu ~/.config/mise/generate-nushell-init.nu" }
 carapace = { version = "latest", postinstall = "nu ~/.config/mise/generate-nushell-init.nu" }
+jq = "latest"
 just = "latest"
 killport = "latest"
 lazygit = "latest"
 node = "lts"
 rclone = "latest"
-ripgrep = "latest"
 rust = "latest"
 starship = { version = "latest", postinstall = "nu ~/.config/mise/generate-nushell-init.nu" }
 tealdeer = "latest"
+worktrunk = { version = "latest", postinstall = "nu ~/.config/mise/generate-nushell-init.nu" }
 
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
