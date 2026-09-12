@@ -7,6 +7,7 @@ killport = "latest"
 lazygit = "latest"
 node = "lts"
 rclone = "latest"
+ripgrep = "latest"
 rust = "latest"
 starship = { version = "latest", postinstall = "nu ~/.config/mise/generate-nushell-init.nu" }
 tealdeer = "latest"
