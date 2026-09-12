@@ -1,8 +1,9 @@
 ---
 description: Explores software architecture, code and library design, best practices, and industry alternatives through in-depth tradeoff analysis.
-mode: subagent
+mode: primary
 model: openai/gpt-5.6-sol
 reasoningEffort: max
+color: info
 permission:
   edit: deny
   task: deny
