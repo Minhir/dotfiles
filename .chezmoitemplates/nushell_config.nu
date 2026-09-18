@@ -6,9 +6,9 @@ const autoload_dir = $nu.data-dir | path join "vendor" "autoload"
 let nu_modified = (ls $nu.current-exe | get modified.0)
 mkdir $autoload_dir
 
-def init-if-stale [cmd: string, init: closure] {
+def init-if-stale [cmd: string, init: closure, --filename: string] {
   # Regenerate missing or stale autoload files; otherwise keep startup fast.
-  let out = ($autoload_dir | path join $"($cmd).nu")
+  let out = ($autoload_dir | path join ($filename | default $"($cmd).nu"))
   let cmd_path = (which $cmd | where type == external | get -o path.0)
 
   if $cmd_path == null {
@@ -35,6 +35,7 @@ def init-if-stale [cmd: string, init: closure] {
   $generated | save -f $out
 }
 
-init-if-stale mise { mise activate nu }
+# Load mise before the integrations that need its tools on PATH.
+init-if-stale mise { mise activate nu } --filename "00-mise.nu"
 
 $env.CARAPACE_BRIDGES = 'zsh'
