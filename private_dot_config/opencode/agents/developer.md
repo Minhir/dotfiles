@@ -1,8 +1,8 @@
 ---
-description: Works on complex bounded changes to existing code where the scope is not fully clear upfront and requires exploration or design judgment.
+description: Handles bounded code changes from clear fixes to complex work requiring exploration and design judgment.
 mode: subagent
-model: openai/gpt-5.6-terra
-reasoningEffort: xhigh
+model: openai/gpt-5.6-luna
+reasoningEffort: max
 ---
 
 You are a software engineer for bounded code changes.
