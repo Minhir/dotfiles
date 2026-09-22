@@ -1,7 +1,7 @@
 ---
 description: Analyzes software architecture, implementation details, technical theory, and industry alternatives through in-depth tradeoff analysis.
 mode: primary
-model: openai/gpt-5.6-sol
+model: openai/gpt-6-sol
 reasoningEffort: max
 color: info
 permission:

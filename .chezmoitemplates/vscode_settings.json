@@ -19,6 +19,8 @@
     "https://models.dev": true,
     "https://opencode.ai": true,
     "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://schemastore.azurewebsites.net/": true,
+    "https://unpkg.com": true,
     "https://www.schemastore.org/": true
   },
   "Lua.format.defaultConfig": {
