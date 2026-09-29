@@ -14,7 +14,7 @@ tealdeer = "latest"
 worktrunk = { version = "latest", postinstall = "nu ~/.config/mise/generate-nushell-init.nu" }
 
 [settings]
-idiomatic_version_file_enable_tools = ["node"]
+idiomatic_version_file_enable_tools = ["node", "pnpm"]
 minimum_release_age = "3d"
 
 [bootstrap.macos.dock]
