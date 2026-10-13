@@ -1,8 +1,7 @@
 ---
 description: Handles bounded code changes from clear fixes to complex work requiring exploration and design judgment.
 mode: subagent
-model: openai/gpt-6-luna
-reasoningEffort: max
+model: openai/gpt-6-luna#max
 ---
 
 You are a software engineer for bounded code changes.
