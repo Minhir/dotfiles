@@ -16,6 +16,7 @@ worktrunk = { version = "latest", postinstall = "nu ~/.config/mise/generate-nush
 [settings]
 idiomatic_version_file_enable_tools = ["node", "pnpm"]
 minimum_release_age = "3d"
+tool_update.global_auto = true
 
 [bootstrap.macos.dock]
 autohide = false
