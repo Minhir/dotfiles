@@ -1,0 +1,22 @@
+{
+  "$schema": "https://opencode.ai/v2/cli.json",
+  "theme": {
+    "name": "opencode"
+  },
+  "diffs": {
+    "wrap": "word"
+  },
+  "session": {
+    "sidebar": "hide",
+    "scrollbar": true,
+    "thinking": "hide"
+  },
+  "animations": true,
+  "tabs": {
+    "layout": "horizontal"
+  },
+  "keybinds": {
+    "model.cycle_favorite": "ctrl+]",
+    "model.cycle_favorite_reverse": "ctrl+["
+  }
+}
